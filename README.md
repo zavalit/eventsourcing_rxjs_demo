@@ -49,7 +49,7 @@ curl -X GET \
 
 You can use an `redis-commander` to take a look what and how was stored in redis. For that just open `http://localhost:8091/` in your Browser
 
-In order to check what was stored in mongodb, you can use (MongoDB Compass)[https://www.mongodb.com/download-center/compass]. For connection use following credentials: `mongodb://projector:projector@localhost:27027/`
+In order to check what was stored in mongodb, you can use [MongoDB Compass](https://www.mongodb.com/download-center/compass). For connection use following credentials: `mongodb://projector:projector@localhost:27027/`
 
 
 
