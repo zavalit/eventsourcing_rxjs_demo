@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:6.0.3
+    hostname: redis
+    ports:
+      - 6379:6379
+    volumes:
+      - ./redis-data:/data
+    entrypoint: redis-server --appendonly yes
+
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    environment:
+    - REDIS_HOSTS=local:redis:6379
+    ports:
+    - "8091:8081"
+
+  mongodb:
+    image: mongo:4.2.6
+    container_name: projections-mongodb
+    environment:
+        MONGO_INITDB_ROOT_USERNAME: admin
+        MONGO_INITDB_ROOT_PASSWORD: 12345
+    ports:
+        - 27027:27017
+    volumes:
+        - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+        - ./mongo-data:/data/db
+    command: --auth --wiredTigerCacheSizeGB 0.5

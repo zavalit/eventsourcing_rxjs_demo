@@ -1,0 +1,5 @@
+
+export enum ProjectEvents {
+    PROJECT_CREATED = 'PROJECT_CREATED',
+    PROJECT_UPDATED = 'PROJECT_UPDATED'
+}

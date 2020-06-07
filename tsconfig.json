@@ -1,0 +1,17 @@
+{"compilerOptions": {
+      "outDir": "build",
+      "rootDir": "src",
+      "moduleResolution": "node",
+      "module": "commonjs",
+      "declaration": true,
+      "inlineSourceMap": true,
+      "esModuleInterop": true,      
+      "lib": [ "es5", "es6", "dom", "dom.iterable"],
+      "types": ["node"],
+      "typeRoots": ["node_modules/@types", "src/types"]
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules/**"],
+    "compileOnSave": false
+}
+  
