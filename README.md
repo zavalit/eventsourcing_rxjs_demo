@@ -2,7 +2,7 @@
 
 ## Setup
 
-bootsrap first afordable persistance layers (redis, mongodb) as well as `redis commander` for debugging:
+For the bootsrap all persistance layers (redis, mongodb) that application needs, as well as `redis commander` for debugging:
 ```sh
 docker-compose up -d
 ```
