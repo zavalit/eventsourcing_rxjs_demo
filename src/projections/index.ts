@@ -80,6 +80,11 @@ const projectHotObservable$: Observable<ProjectEventStreamObject> = streamConsum
 ) as ConnectableObservable<ProjectEventStreamObject>
 
 
+projectHotObservable$
+    .subscribe({  
+        next : appendToAggregateCache
+    })
+
 
 projectHotObservable$.pipe( filter(event => event.event_name ===  ProjectEvents.PROJECT_CREATED))
     .subscribe({
@@ -99,8 +104,4 @@ projectHotObservable$
     })
 
 
-projectHotObservable$
-    .subscribe({  
-        next : appendToAggregateCache
-    })
    

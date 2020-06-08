@@ -1,5 +1,7 @@
 # Eventsourcing Demo App
 
+The intention and concepts behind this app are descipbed in [Lightweight Eventsourcing done by RxJS on Redis Streams](https://medium.com/@zavalit/lightweight-eventsourcing-done-by-rxjs-on-redis-streams-28ce706991b2)
+
 ## Setup
 
 For the first bootsrap all persistance layers (redis, mongodb) that demo app needs to run, as well as `redis commander` for debugging:
@@ -12,6 +14,7 @@ docker-compose up -d
 
 start an app 
 ```sh
+npm install
 npm run start
 ````
 
