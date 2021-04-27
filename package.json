@@ -33,7 +33,7 @@
     "express": "^4.17.1",
     "mongodb": "^3.5.8",
     "node-redis": "^0.1.7",
-    "redis": "^3.0.2",
+    "redis": "^3.1.1",
     "rxjs": "^6.5.5"
   },
   "devDependencies": {
